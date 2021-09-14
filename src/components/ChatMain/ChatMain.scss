@@ -1,0 +1,88 @@
+.chatmain {
+	height: 332px;
+	padding: 0 24px;
+	font-family: Inter;
+	overflow-x: scroll;
+	&__item {
+		display: flex;
+		border-bottom: 1px solid #e8e8e8;
+		border-top: 1px solid #e8e8e8;
+		padding: 24.5px 0;
+		&__avt {
+			margin: 4px 16px 0 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 48px;
+			height: 48px;
+			background: linear-gradient(
+					0deg,
+					rgba(0, 133, 255, 0.1),
+					rgba(0, 133, 255, 0.1)
+				),
+				#fff;
+			border-radius: 256px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			color: #0085ff;
+		}
+		&__right {
+			&__heading {
+				display: flex;
+				align-items: center;
+				&__name {
+					font-size: 16px;
+					line-height: 24px;
+					color: #1c1c1c;
+					margin-right: 8px;
+					font-weight: 500;
+					margin-bottom: 4px;
+				}
+				&__time {
+					font-size: 13px;
+					line-height: 20px;
+					color: #969696;
+					margin-bottom: 4px;
+				}
+			}
+
+			&__quote {
+				display: flex;
+				margin-top: 8px;
+				&__icon {
+				}
+				&__content {
+					margin-left: 14px;
+					&__top {
+						display: flex;
+						align-items: center;
+						&__username {
+							font-weight: 500;
+							font-size: 16px;
+							line-height: 24px;
+							color: #1c1c1c;
+							margin-bottom: unset;
+							margin-right: 11.41px;
+						}
+						&__icon {
+						}
+					}
+					&__bottom {
+						font-size: 16px;
+						line-height: 24px;
+						color: #585757;
+						margin-top: 4px;
+					}
+				}
+			}
+
+			&__content {
+				font-size: 16px;
+				line-height: 24px;
+				color: #585757;
+				margin-bottom: unset;
+			}
+		}
+	}
+}

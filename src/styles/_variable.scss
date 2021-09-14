@@ -1,0 +1,31 @@
+//color
+$color-white: #fff;
+$color-black: #000;
+$color-light-secondary: #f7f7f7;
+
+$color-blue: #0085ff;
+$color-blue-bg-2: linear-gradient(
+    0deg,
+    rgba(0, 133, 255, 0.1),
+    rgba(0, 133, 255, 0.1)
+  ),
+  #ffffff;
+$color-orange: #f98600;
+$color-orange-bg-2: linear-gradient(
+    0deg,
+    rgba(255, 150, 27, 0.1),
+    rgba(255, 150, 27, 0.1)
+  ),
+  #ffffff;
+$color-green: #00ba34;
+$color-green-bg-2: linear-gradient(
+    0deg,
+    rgba(0, 186, 52, 0.1),
+    rgba(0, 186, 52, 0.1)
+  ),
+  #ffffff;
+$color-red: #e92c2c;
+
+$color-text-gray-1: #969696;
+$color-text-gray-2: #585757;
+$color-text-black: #1c1c1c;

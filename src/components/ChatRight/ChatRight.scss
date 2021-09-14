@@ -1,0 +1,159 @@
+.chatright {
+	font-family: Inter;
+	border-left: 1px solid #e8e8e8;
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 112px;
+		border-bottom: 1px solid #e8e8e8;
+
+		&__left {
+			padding-left: 24px;
+			&__info {
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 32px;
+				color: #1c1c1c;
+				margin-bottom: 8px;
+				margin-top: 24px;
+			}
+			&__date {
+				font-size: 16px;
+				line-height: 24px;
+				color: #969696;
+				margin-bottom: 24px;
+			}
+		}
+		&__right {
+			padding-right: 24px;
+		}
+	}
+
+	&__member {
+		padding: 27.5px 30.82px 0 23.5px;
+		&__title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 22px;
+			&__member {
+				margin-bottom: unset;
+				font-size: 12px;
+				line-height: 16px;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				color: #969696;
+			}
+		
+		}
+
+		&__content {
+			&__item {
+				margin: 10px 10px;
+				display: flex;
+				&__avt {
+					margin-right: 12px;
+					height: 24px;
+					width: 24px;
+					border-radius: 256px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					font-size: 10px;
+					line-height: 16px;
+
+					text-align: center;
+					letter-spacing: 0.04em;
+					text-transform: uppercase;
+				}
+				&__avt.avtjf {
+					background: linear-gradient(
+							0deg,
+							rgba(0, 133, 255, 0.1),
+							rgba(0, 133, 255, 0.1)
+						),
+						#fff;
+
+					color: #0085ff;
+				}
+				&__avt.avtea {
+					background: linear-gradient(
+							0deg,
+							rgba(0, 186, 52, 0.1),
+							rgba(0, 186, 52, 0.1)
+						),
+						#fff;
+					color: #00ba34;
+				}
+				&__avt.avtvp {
+					background: linear-gradient(
+							0deg,
+							rgba(255, 150, 27, 0.1),
+							rgba(255, 150, 27, 0.1)
+						),
+						#fff;
+					color: #f98600;
+				}
+				&__username {
+					font-size: 16px;
+					line-height: 24px;
+					color: #585757;
+				}
+
+				&__admin {
+					height: 24px;
+					width: 54px;
+					background: linear-gradient(
+							0deg,
+							rgba(0, 133, 255, 0.1),
+							rgba(0, 133, 255, 0.1)
+						),
+						#ffffff;
+					border-radius: 6px;
+					font-weight: 500;
+					font-size: 13px;
+					line-height: 20px;
+					color: #0085ff;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-left: 110px;
+				}
+				&__moderator {
+					height: 24px;
+					width: 78px;
+					background: #fff;
+					border: 1px solid #e8e8e8;
+					box-sizing: border-box;
+					border-radius: 6px;
+					font-weight: 600;
+					font-size: 13px;
+					line-height: 20px;
+					text-align: center;
+					color: #1c1c1c;
+					margin-left: 104px;
+				}
+			}
+		}
+	}
+
+	&__common {
+		padding: 16px 30.82px 0 23.5px;
+		&__title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 22px;
+			&__common {
+				margin-bottom: unset;
+				font-size: 12px;
+				line-height: 16px;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				color: #969696;
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+export const ADD_TASK = 'ADD_TASK';
+
+export const GET_CHARTS_REQUEST = 'GET_CHARTS_REQUEST';
+export const GET_CHARTS_SUCCESS = 'GET_CHARTS_SUCCESS';
+export const GET_CHARTS_FAIL = 'GET_CHARTS_FAIL';

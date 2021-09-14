@@ -1,0 +1,16 @@
+#chat {
+	.chat {
+		display: flex;
+
+		&__left {
+			width: 312px;
+			margin-left: 72px;
+		}
+		&__main {
+			width: 744.5px;
+		}
+		&__right {
+			width: 383.5px;
+		}
+	}
+}

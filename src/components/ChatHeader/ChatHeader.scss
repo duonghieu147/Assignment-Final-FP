@@ -1,0 +1,51 @@
+.chatheader {
+	padding: 24px;
+	height: 112px;
+	display: flex;
+	justify-content: space-between;
+	font-family: Inter;
+	align-items: center;
+	border-bottom: 1px solid #e8e8e8;
+	&__left {
+		&__room {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 32px;
+			color: #969696;
+			display: flex;
+			height: 34px;
+			margin-bottom: 8px;
+			&__p {
+				color: #1c1c1c;
+				margin-left: 12px;
+			}
+		}
+		&__group {
+			display: flex;
+			align-items: center;
+			margin-left: 28px;
+			font-size: 16px;
+			line-height: 24px;
+			&__member {
+				color: #969696;
+				margin-right: 16.7px;
+				margin-bottom: unset;
+			}
+			&__icon {
+				margin-right: 16.7px;
+			}
+			&__add {
+				text-align: center;
+				color: #1c1c1c;
+				margin-bottom: unset;
+			}
+		}
+	}
+	&__right {
+		display: flex;
+		align-items: center;
+		&__icon {
+			margin-left: 22px;
+		}
+	}
+}

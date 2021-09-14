@@ -1,0 +1,61 @@
+.table__left{
+    width: 312px;
+    height: 960px;
+    margin: 24px 0 0 87px ;
+    color: #969696;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  .table__left p {
+    font-size: 12px;
+  }
+  .table__search{
+    width: 264px;
+    margin-top: 16px;
+    font-size: 16px;
+
+  }
+  .ant-input-affix-wrapper{
+    border-radius:8px;
+  }
+  .table__card{
+    width: 264px;
+    height: 113px;
+    margin: 12px 0px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+  }
+
+  .ant-card-meta-title{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .table__card hr {
+    width: 90%; 
+    margin: 12px; 
+  }
+  .table__card:active{
+    border: 2px solid #0085FF;
+  }
+  .table__card:hover{
+    border: 2px solid #0085FF;
+  }
+
+  .card__detail{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 12px;
+      margin-bottom: 16px;
+
+  }
+  .card__detail__stt{
+      background: rgba(255, 150, 27, 0.1);
+      padding: 0 6px;
+      font-size: 13px;
+  }
+  .card__detail__price{
+    color: #585757;
+    font-size: 16px;
+  }
