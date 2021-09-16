@@ -7,8 +7,6 @@ import Chat from './pages/Chat';
 import Reports from './pages/Reports';
 import Dashboard from './pages/Dashboard';
 
-
-
 import PrivateRoute from './config/PrivateRoute';
 function App() {
 	return (
@@ -19,8 +17,6 @@ function App() {
 				<PrivateRoute path="/dashboard" exact component={Dashboard}></PrivateRoute>
 
 				<Route path="/login" exact component={Login} />
-				{/* <Route path="/report" exact component={Reports} />
-				<Route path="/dashboard" exact component={Dashboard} /> */}
 				<Route path="*" exact component={NotFound}></Route>
 			</Switch>
 		</BrowserRouter>

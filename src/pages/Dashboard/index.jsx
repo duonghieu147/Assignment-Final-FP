@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Dashboard.css';
 import Header from '../../components/Header';
@@ -6,8 +6,14 @@ import SideBar from '../../components/SideBar';
 import { Icon } from '../../assets/svgs/Icon';
 import Charts from '../../components/Charts';
 import FooterDashboard from '../../components/FooterDashboard';
-
+import { useEffect } from 'react';
 function Dashboard(props) {
+    var sum= localStorage.getItem('sum');
+    const [sums, setSum] = useState(0);
+    useEffect(() => {
+        sum= localStorage.getItem('sum');
+        // setSum(Math.random());
+      });
     return (
         <div className="container">
             <div className="sidebar "><SideBar /></div>
@@ -31,7 +37,7 @@ function Dashboard(props) {
                 <div className='charts'>
                     <Charts />
                     <div className='charts__details'>
-                        <h3>$328</h3>
+                        <h3>${sum}</h3>
                         <p>Spent this month <span className='span1'>56% <Icon.Increase /></span></p>
                         <button>All Spent Summary {'>'}</button>
                         <h3>36</h3>

@@ -1,0 +1,14 @@
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.content__chart {
+    margin-bottom: 24px;
+  }
+  #legend-container {
+    margin-top: 56px;
+    margin-left: 48px;
+  }
+  #legend-container span{
+    background: url(../../assets/svgs/DesignChart.svg);
+  }
