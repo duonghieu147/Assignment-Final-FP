@@ -81,9 +81,9 @@ function Tables(props) {
     return (
         <>
         <Table columns={columns} dataSource={data} />
-        <div style={{display: 'flex'}}>
+        <div className='inputPage' >
             <p>Go to</p>
-            <input style={{width: '60px',height:'40px' ,margin:'0 10px'}} value="10"></input>
+            <input value="10"></input>
             <p>Page</p>
         </div>
         </>

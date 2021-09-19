@@ -9,11 +9,11 @@ import FooterDashboard from '../../components/FooterDashboard';
 import { useEffect } from 'react';
 function Dashboard(props) {
     var sum= localStorage.getItem('sum');
-    const [sums, setSum] = useState(0);
-    useEffect(() => {
-        sum= localStorage.getItem('sum');
-        // setSum(Math.random());
-      });
+    const [loading, setLoading] = useState(0);
+    function loadings(){
+        setLoading(loading+1);
+    }
+    document.addEventListener('click',loadings);
     return (
         <div className="container">
             <div className="sidebar "><SideBar /></div>

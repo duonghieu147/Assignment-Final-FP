@@ -44,12 +44,25 @@ body{
     display: flex;
     justify-content: space-between;
   }
-.top__left .ant-card-meta-title {
+  .top__left {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 16px;
+  }
+  .top__left img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* display: block; */
+  }
+  .top__left p {
     font-weight: 500;
     font-size: 36px;
     font-style: normal;
     color: #1C1C1C;
-}
+    margin-left: 10px;
+  }
   .top__right{
     display:flex;
     justify-content: space-between;

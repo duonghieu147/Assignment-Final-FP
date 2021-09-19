@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './Reports.css';
 import SideBar from '../../components/SideBar';
@@ -7,14 +7,28 @@ import TableRight from '../../components/TableRight';
 import TableLeft from '../../components/TableLeft';
 import { Icon } from '../../assets/svgs/Icon';
 
-
-
-import { Card, Avatar, Button } from 'antd';
-
-const { Meta } = Card;
-
+import { Button } from 'antd';
 
 function Reports(props) {
+    const [loading, setLoading] = useState(0);
+    let img_user = localStorage.getItem('img')
+    let name_user = localStorage.getItem('name')
+    let sales_user = localStorage.getItem('sales')
+    function loadings(){
+        activeCard()
+    }
+    function activeCard() {
+        var btns = document.getElementsByClassName("table__card");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+        setLoading(loading + 1);
+    }
+    document.addEventListener("click", loadings);
     return (
         <div className="container">
             <div className="sidebar "><SideBar /></div>
@@ -25,17 +39,14 @@ function Reports(props) {
                     <div className="table__right">
                         <div className="table__right__top">
                             <div className='top__left'>
-                                <Meta style={{ 'margin-top': '16px', 'margin-left': '16px' }}
-                                    avatar={<Avatar size={64} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                                    title="Ralph Edwards"
-                                />
+                                <img id='img_user' src={img_user} />
+                                <p id='name_user'>{name_user}</p>
                             </div>
                             <div className='top__right'>
                                 <div className='balance'>
                                     <p>Account balance:</p>
-                                    <span>$2,794.00</span>
+                                    <span id='sum_user'>{sales_user}</span>
                                 </div>
-                                {/* <Button shape="circle" >...</Button> */}
                                 <button >...</button>
                             </div>
                         </div>

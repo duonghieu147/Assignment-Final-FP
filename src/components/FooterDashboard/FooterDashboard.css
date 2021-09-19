@@ -106,3 +106,8 @@
     color: #585757;
     font-size: 16px;
   }
+
+  /* Hidden */
+  #ishidden .ishidden{
+    display: none;
+  }

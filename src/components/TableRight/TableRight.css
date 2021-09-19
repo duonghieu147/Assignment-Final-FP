@@ -69,3 +69,16 @@ body{
     font-size: 13px;
     line-height: 0px;
   }
+  .inputPage{
+    display: flex;
+  }
+  .inputPage p {
+    line-height: 50px;
+  }
+  .inputPage input {
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }

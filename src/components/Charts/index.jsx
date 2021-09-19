@@ -210,7 +210,7 @@ function Charts(props) {
 
     return (
         <>
-            <div className='content'>
+            <div className='content' id='content'>
                 <div className="content__chart" style={{ height: "320px", width: "810px" }}>
                     <Line data={data} options={options} plugins={plugins} />
                 </div>

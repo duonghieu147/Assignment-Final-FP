@@ -33,3 +33,13 @@
   line-height: 34px;
   font-size: 16px;
 }
+
+.inputPage{
+  display: flex;
+}
+.inputPage input {
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+}
