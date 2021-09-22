@@ -1,87 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
 
 .login {
-	margin: 80px 451px;
-	// margin: 335px 451px;
+  margin: 80px 451px;
+  // margin: 335px 451px;
 
-	&__heading {
-		font-family: 'Roboto', sans-serif;
-		font-style: normal;
-		font-weight: 300;
-		font-size: 17px;
-		line-height: 22px;
-		color: #999;
-		margin-bottom: 84px;
+  &__heading {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 22px;
+    color: #999;
+    margin-bottom: 84px;
 
-		.ant-form-item-label {
-			label {
-				font-family: Inter;
-				font-style: normal;
-				font-weight: bold;
-				font-size: 36px;
-				line-height: 40px;
-				text-align: center;
-				color: #000000;
-				margin-left: 4px;
-			}
-		}
-	}
+    .ant-form-item-label {
+      label {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        color: #000000;
+        margin-left: 4px;
+      }
+    }
+  }
 
-	&__input {
-		.ant-form-item-label {
-			label {
-				font-family: Roboto;
-				font-style: normal;
-				font-weight: 900;
-				font-size: 15px;
-				line-height: 20px;
-				display: flex;
-				align-items: center;
-				color: #151522;
-				margin-bottom: 15px;
+  &__input {
+    .ant-form-item-label {
+      label {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #151522;
+        margin-bottom: 15px;
 
-				::before {
-					content: unset;
-				}
-			}
-		}
-		&__email,
-		&__password {
-			width: 610px;
-			height: 50px;
-			font-family: Roboto;
-			font-style: normal;
-			font-weight: 300;
-			font-size: 13px;
-			line-height: 18px;
-			display: flex;
-			align-items: center;
-			color: #151522;
-			padding: 16px 20px;
-		}
+        ::before {
+          content: unset;
+        }
+      }
+    }
+    &__email,
+    &__password {
+      width: 610px;
+      height: 50px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      color: #151522;
+      padding: 16px 20px;
+    }
 
-		&__password {
-			.ant-input-suffix {
-				display: none;
-			}
-		}
-	}
+    &__password {
+      .ant-input-suffix {
+        display: none;
+      }
+    }
+  }
 
-	&__submit {
-		margin-top: 52px;
-		width: 96px;
-		height: 50px;
-		span {
-			font-family: Roboto;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 16px;
-			line-height: 22px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: #fff;
-		}
-	}
+  &__submit {
+    margin-top: 52px;
+    width: 96px;
+    height: 50px;
+    span {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+  }
 }

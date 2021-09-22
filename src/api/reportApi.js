@@ -1,14 +1,13 @@
-import axiosClient from './axiosClient';
-import Cookie from 'js-cookie';
-const userInfo = Cookie.getJSON('userInfo') || null;
-async function getReport() {
-	const url = '/api/activities';
-	return await axiosClient.get(url, {
-		headers: { Authorization: `Bearer ${userInfo.token}` },
-	});
+import axiosClient from "./axiosClient";
+
+async function getReport(params) {
+  const url = "/api/activities";
+  return await axiosClient.get(url, {
+    headers: { Authorization: `Bearer ${params.token}` },
+  });
 }
 
 const reportApi = {
-	getReport,
+  getReport,
 };
 export default reportApi;

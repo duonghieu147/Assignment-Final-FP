@@ -9,12 +9,12 @@ export default function Quote(props) {
 			<div className="chatmain__item__right__quote__content">
 				<div className="chatmain__item__right__quote__content__top">
 					<p className="chatmain__item__right__quote__content__top__username">
-						{quote}
+						{quoteUser}
 					</p>
 					<Icon.Arrow className="chatmain__item__right__quote__content__top__icon" />
 				</div>
 				<p className="chatmain__item__right__quote__content__bottom">
-					{quoteUser}
+					{quote}
 				</p>
 			</div>
 		</div>

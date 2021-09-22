@@ -7,17 +7,29 @@ import ChatLeft from '../../components/ChatLeft';
 import ChatRight from '../../components/ChatRight';
 import ChatHeader from '../../components/ChatHeader';
 import ChatMain from '../../components/ChatMain';
+import ChatBox from '../../components/ChatBox';
 
-import { getChatList as listChat } from '../../Redux/actions/chatAction';
+import {
+	getChatList as listChat,
+	addChat,
+} from '../../Redux/actions/chatAction';
 
 export default function Chat() {
 	const dispatch = useDispatch();
 
 	const getChatList = useSelector(state => state.getChatList);
 	const { chats, loading, error } = getChatList;
+	console.log(chats);
+	const userLogin = useSelector(state => state.userLogin);
+	const { userInfo } = userLogin;
+
 	useEffect(() => {
-		dispatch(listChat());
-	}, [dispatch]);
+		dispatch(listChat(userInfo));
+	}, [dispatch, userInfo]);
+
+	const addChatHandle = comment => {
+		dispatch(addChat(userInfo, comment));
+	};
 
 	return (
 		<>
@@ -29,7 +41,8 @@ export default function Chat() {
 					</div>
 					<div className="chat__main">
 						<ChatHeader />
-						<ChatMain chats={chats}/>
+						<ChatMain chats={chats} />
+						<ChatBox addChatHandle={addChatHandle} />
 					</div>
 					<div className="chat__right">
 						<ChatRight />

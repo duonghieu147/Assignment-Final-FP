@@ -4,6 +4,7 @@ import { Icon } from '../../assets/svgs/Icon';
 import Avt1 from '../../assets/images/Avt1.png';
 import Avt2 from '../../assets/images/Avt2.png';
 import Avt3 from '../../assets/images/Avt3.png';
+import { Dot } from '../../assets/svgs/ActiveDot';
 
 export default function ChatRight() {
 	return (
@@ -41,6 +42,7 @@ export default function ChatRight() {
 					<div className="chatright__member__content__item">
 						<p className="chatright__member__content__item__avt avtjf">
 							JF
+							<Dot fill="#E92C2C" />
 						</p>
 						<p className="chatright__member__content__item__username">
 							Jeremy Firow
@@ -49,6 +51,7 @@ export default function ChatRight() {
 					<div className="chatright__member__content__item">
 						<p className="chatright__member__content__item__avt avtea">
 							EA
+							<Dot fill="#E92C2C" />
 						</p>
 						<p className="chatright__member__content__item__username">
 							Emil Anders
@@ -80,6 +83,7 @@ export default function ChatRight() {
 					<div className="chatright__member__content__item">
 						<p className="chatright__member__content__item__avt avtvp">
 							VP
+							<Dot fill="#00BA34" />
 						</p>
 						<p className="chatright__member__content__item__username">
 							Victor Pacheco

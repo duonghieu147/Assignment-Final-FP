@@ -1,12 +1,12 @@
 import React from 'react';
-import './CardMini.css'
+import './CardMini.scss'
 import { Icon } from '../../assets/svgs/Icon';
 
 
 function CardMini(props) {
 
     return (
-        <div className='table__card'
+        <div className='table__card' id='table__card'
             onClick={() => {
                 localStorage.setItem('img', props.img);
                 localStorage.setItem('name', props.name);

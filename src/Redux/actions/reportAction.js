@@ -1,7 +1,5 @@
-import * as actionTypes from '../contants/reportContant';
+import * as actionTypes from "../contants/reportContant";
 
-export const getReportList = () => {
-	return { type: actionTypes.GET_REPORT_REQUEST };
+export const getReportList = (params) => {
+  return { type: actionTypes.GET_REPORT_REQUEST, params: params };
 };
-
-function* addTask() {}

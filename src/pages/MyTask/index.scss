@@ -1,0 +1,303 @@
+.task {
+  padding: 16px 16px 16px 88px;
+  background: #fff;
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 36px;
+    &-item {
+      display: flex;
+      gap: 10px;
+      color: #1c1c1c;
+      &-add {
+        cursor: pointer;
+        color: #fff;
+        width: 124px;
+        height: 40px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px 12px;
+        background: #0085ff;
+        border-radius: 8px;
+      }
+      &-icon {
+        margin-top: 2px;
+        width: 16px;
+        height: 16px;
+      }
+      &-icon-1 {
+        margin-top: 4px;
+        width: 15px;
+        height: 10px;
+      }
+      &-icon-2 {
+        margin-top: 2px;
+        width: 16px;
+        height: 15px;
+      }
+      &-icon-5 {
+        margin-top: 8px;
+        width: 8px;
+        height: 5px;
+      }
+    }
+  }
+  &__bottom-header {
+    display: flex;
+    margin-bottom: 36px;
+    &-month {
+      min-width: 297px;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 48px;
+      color: #1c1c1c;
+    }
+    &-today {
+      margin-top: 5px;
+      width: 71px;
+      height: 40px;
+      text-align: center;
+      cursor: pointer;
+      padding: 8px 12px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      border: 1px solid #e8e8e8;
+      color: #1c1c1c;
+      border-radius: 8px;
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+    &-back {
+      margin-top: 5px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+    }
+    &-next {
+      margin-top: 5px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+//calendar
+
+.events-status-doing {
+  color: #0085ff;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 6px 12px;
+  margin-bottom: 4px;
+  background: rgba(0, 133, 255, 0.1);
+  border-radius: 8px;
+  .events-action {
+    display: none;
+    font-size: 20px;
+    color: #1c1c1c;
+    float: right;
+    margin-top: -4px;
+  }
+}
+.events-status-doing:hover {
+  .events-action {
+    display: block;
+  }
+}
+.events-status-pending {
+  color: #f98600;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 6px 12px;
+  margin-bottom: 4px;
+  background: rgba(255, 150, 27, 0.1);
+  border-radius: 8px;
+  .events-action {
+    display: none;
+    font-size: 20px;
+    color: #1c1c1c;
+    float: right;
+    margin-top: -4px;
+  }
+}
+.events-status-pending:hover {
+  .events-action {
+    display: block;
+  }
+}
+.events-status-success {
+  color: #00ba34;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 6px 12px;
+  margin-bottom: 4px;
+  background: rgba(0, 186, 52, 0.1);
+  border-radius: 8px;
+  .events-action {
+    display: none;
+    font-size: 20px;
+    color: #1c1c1c;
+    float: right;
+    margin-top: -4px;
+  }
+}
+.events-status-success:hover {
+  .events-action {
+    display: block;
+  }
+}
+
+/*ant calendar*/
+
+/*today*/
+.ant-picker-calendar-full
+  .ant-picker-panel
+  .ant-picker-cell-selected
+  .ant-picker-calendar-date-today {
+  background: #fff;
+  position: relative;
+}
+.ant-picker-calendar-full
+  .ant-picker-panel
+  .ant-picker-cell-selected
+  .ant-picker-calendar-date-today
+  .ant-picker-calendar-date-value {
+  position: absolute;
+  color: #fff;
+  //width: 40px;
+  top: -8px;
+  left: 0;
+  //height: 48px;
+  padding: 12px;
+  background: #0085ff;
+  border-radius: 0px 0px 8px 0px;
+}
+//content
+.ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date-content {
+  position: absolute;
+  top: 55px;
+  min-width: 178px;
+  height: 92px;
+  // overflow-y: auto;
+  // scrollbar-width: 1px;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 1.5715;
+  text-align: left;
+}
+//value header
+.ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date-value {
+  line-height: 24px;
+  transition: color 0.3s;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+.ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date {
+  display: block;
+  width: 202px;
+  height: 145px;
+  padding: 4px 8px 0;
+  border: 0;
+  border: 1px solid #e8e8e8;
+  border-radius: 0;
+}
+
+.ant-picker-calendar-full .ant-picker-panel {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  border: 0;
+}
+.ant-picker-cell {
+  padding: 3px 0;
+  color: #969696;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.ant-picker-cell-in-view {
+  color: #1c1c1c;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.ant-picker-calendar .ant-picker-panel .ant-picker-content thead {
+  position: relative;
+}
+.ant-picker-calendar .ant-picker-panel .ant-picker-content thead tr {
+  position: absolute;
+  top: 6px;
+  left: 163px;
+  margin-top: 8px;
+}
+.ant-picker-calendar
+  .ant-picker-panel
+  .ant-picker-content
+  thead
+  tr
+  th:nth-child(4) {
+  padding-right: 172px;
+}
+.ant-picker-calendar
+  .ant-picker-panel
+  .ant-picker-content
+  thead
+  tr
+  th:nth-child(5) {
+  padding-right: 181px;
+}
+.ant-picker-calendar
+  .ant-picker-panel
+  .ant-picker-content
+  thead
+  tr
+  th:nth-child(6) {
+  padding-right: 181px;
+}
+.ant-picker-calendar .ant-picker-panel .ant-picker-content thead tr th {
+  padding-right: 170px;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: none;
+  line-height: 24px;
+  z-index: 10;
+  color: #969696;
+}
+.ant-picker-calendar
+  .ant-picker-panel
+  .ant-picker-content
+  thead
+  tr
+  th:last-child {
+  padding-right: 0;
+}
+//less-more
+.action__more,
+.action__less {
+  color: #0085ff;
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+}
+//require
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  display: inline-block;
+  margin-right: 0px;
+  content: "";
+}
+//date-time piker
+.ant-picker-header {
+  border-bottom: none;
+}
+button.ant-picker-header-super-prev-btn,
+button.ant-picker-header-super-next-btn {
+  display: none;
+}

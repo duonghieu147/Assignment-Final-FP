@@ -1,21 +1,29 @@
 import React, { useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { Icon } from "../../assets/svgs/Icon";
+import { generateName } from "../../config/GetName";
 //import { Link } from "react-router-dom";
 
 import useOnClickOutside from "../../config/use-on-click-outside";
+import { logout } from "../../Redux/actions/userAction";
 import "./index.scss";
 function Header() {
   const ref = useRef();
+  const dispatch = useDispatch();
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   useOnClickOutside(ref, () => setIsOpen(false));
+
+  const { userInfo } = useSelector((state) => state.userLogin);
+  //console.log(userInfo);
+  const logoutHandler = () => {
+    dispatch(logout());
+  };
   return (
     <div className="header">
       <div className="header__search">
-        <img
-          src="/images/icon_search.png"
-          alt="icon-search"
-          className="header__search-icon"
-        />
+        <Icon.IconSearch className="header__search-icon" />
         <input
           type="text"
           className="header__search-input"
@@ -23,12 +31,10 @@ function Header() {
         />
       </div>
       <div className="header__right">
-        <img
-          src="/images/icon_notify.png"
-          alt=""
-          className="header__right-notify"
-        />
-        <span className="header__right-avatar">P</span>
+        <Icon.Noti className="header__right-notify" />
+        <span className="header__right-avatar">
+          {generateName(userInfo?.name || "Kathryn Murphy")}
+        </span>
         <span
           onClick={toggle}
           className={
@@ -37,29 +43,22 @@ function Header() {
               : "header__right-name dropdown-menu"
           }
         >
-          Phu
+          {userInfo?.name || "Kathryn Murphy"}
           <div ref={ref} className="dropdown-menu__list">
             <div className="dropdown-menu__item">
-              <div className="dropdown">
-                <span className="icon">
-                  <i className="far fa-user"></i>
-                </span>
-                <span className="title">Profile</span>
-              </div>
               <div className="dropdown ">
-                <span className="icon">
+                {/* <span className="icon">
                   <i className="far fa-sign-out-alt"></i>{" "}
-                </span>
-                <span className="title">Sign out</span>
+                </span> */}
+                <Icon.Logout className="icon" />
+                <Link to="/login" onClick={logoutHandler} className="title">
+                  Sign out
+                </Link>
               </div>
             </div>
           </div>
         </span>
-        <img
-          src="/images/icon_dropdown.png"
-          alt=""
-          className="header__right-dropdown"
-        />
+        <Icon.DropdownHeader className="header__right-dropdown" />
       </div>
     </div>
   );
